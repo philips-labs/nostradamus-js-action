@@ -2,7 +2,8 @@ FROM node:erbium-alpine
 
 RUN apk add --no-cache \
   git \
-  openssh
+  openssh \
+  bash
 
 COPY entrypoint.sh /entrypoint.sh
 

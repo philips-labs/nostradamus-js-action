@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/bash
 
 cd ${INPUT_SOURCEPATH:-.} 
 
