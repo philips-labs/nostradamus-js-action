@@ -38,11 +38,16 @@ new-packages:
   name: Nostradamus
   runs-on: self-hosted
   steps:
-    - uses: philips-labs/nostradamus-action@main
-      id: nostradamus
-      with:
-        sourcePath: . 
-    - run: echo "has new dependencies: ${{ steps.nostradamus.outputs.newDependencies }}"
+  - uses: actions/checkout@v2
+    with:
+      fetch-depth: 0
+  - uses: philips-labs/nostradamus-js-action@main
+    id: nostradamus
+    with:
+      sourcePath: .
+  - run: |
+      echo "has new dependencies:"
+      echo ${steps.nostradamus.outputs.newDependencies}
 ```
 
 ## Support

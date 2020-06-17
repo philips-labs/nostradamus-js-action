@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/sh -l
+
+cd ${INPUT_SOURCEPATH:-.} 
 
 rm yarn.lock
 yarn
