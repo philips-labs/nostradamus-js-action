@@ -15,6 +15,7 @@ This Action checks for new js packages!
 - [Inputs](#inputs)
 - [Outputs](#outputs)
 - [Example Usage](#example-usage)
+- [Example Project](#example-project)
 - [Support](#support)
 - [Contributors](#contributors)
 - [License](#license)
@@ -49,6 +50,10 @@ new-packages:
       echo "has new dependencies:"
       echo ${steps.nostradamus.outputs.newDependencies}
 ```
+
+## Example project
+
+[https://github.com/JeroenKnoops/nostradamus-js-action-example](https://github.com/JeroenKnoops/nostradamus-js-action-example)
 
 ## Support
 
